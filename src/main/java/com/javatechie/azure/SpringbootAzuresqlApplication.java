@@ -24,7 +24,8 @@ public class SpringbootAzuresqlApplication {
 
     @GetMapping("/employees")
     public List<Employee> getEmployees() {
-        return repository.findAll();
+        return "ID: ";
+       // return repository.findAll();
     }
     
     @GetMapping("/getemployee")
