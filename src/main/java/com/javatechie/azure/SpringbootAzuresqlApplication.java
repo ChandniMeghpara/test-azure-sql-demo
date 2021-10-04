@@ -28,9 +28,9 @@ public class SpringbootAzuresqlApplication {
        // return repository.findAll();
     }
     
-    @GetMapping("/getemployee")
-    public Employee getEmployee(@RequestBody int id) {
-    	return repository.getById(id);
+        @GetMapping("/hello")
+    public String hello() {
+    	return "Hello";
     }
 
     public static void main(String[] args) {
